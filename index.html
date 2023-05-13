@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button {
+            transition: all ease 0.5s;
+        }
+        button:hover {
+            background-color: #fb6445;
+            cursor: pointer;
+        }
+    </style>
+    <div class="salary" style="max-width: 1200px; height: auto; background-color: yellow; text-align:center; margin: 100px auto; padding: 10px;">
+        <h2>Bài 1: Tính tiền lương nhân viên</h2>
+        <input id="workingDay" type="text" placeholder="số ngày làm" style="width: 200px; height: 30px; justify-content:center; border-radius: 5px;">
+        <button id="btnS" style="width: 40px; height: 20px; border-radius: 5px;"></button>
+        <p>Tổng tiền nhận được: <span id="total"></span>vnd</p>
+    </div>
+
+    <div class="number" style="max-width: 1200px; height: auto; background-color: yellow; text-align:center; margin: 100px auto; padding: 10px;">
+        <h2>Bài 2: Tính giá trị trung bình của 5 số thực mà người dùng nhập vào</h2>
+        <input type="text" id="InputTotal" style="width: 100px; height: 30px; justify-content:center; border-radius: 5px;" placeholder="nhập số">
+        <input type="text" id="InputTotal2" style="width: 100px; height: 30px; justify-content:center; border-radius: 5px;" placeholder="nhập số">
+        <input type="text" id="InputTotal3" style="width: 100px; height: 30px; justify-content:center; border-radius: 5px;" placeholder="nhập số">
+        <input type="text" id="InputTotal4" style="width: 100px; height: 30px; justify-content:center; border-radius: 5px;" placeholder="nhập số">
+        <input type="text" id="InputTotal5" style="width: 100px; height: 30px; justify-content:center; border-radius: 5px;" placeholder="nhập số">
+        <button style="width: 40px; height: 20px; border-radius: 5px;" id="btnN"></button>
+        <p>Giá trị trung bình là: <span id="total2"></span></p>
+    </div>
+
+    <div class="change__usd" style="max-width: 1200px; height: auto; background-color: yellow; text-align:center; margin: 100px auto; padding: 10px;">
+        <h2>Bài 3: Quy đổi USD sang VND</h2>
+        <input id="Exchange" type="text" placeholder="USD" style="width: 200px; height: 30px; justify-content:center; border-radius: 5px;">
+        <button id="btnC" style="width: 40px; height: 20px; border-radius: 5px;"></button>
+        <p>Có Giá là: <span id="total3"></span>vnd</p>
+    </div>
+
+    <div class="rectangle" style="max-width: 1200px; height: auto; background-color: yellow; text-align:center; margin: 100px auto; padding: 10px;">
+        <h2>Bài 4: Tính diện tích và chu vi hình chữ nhật</h2>
+        <input id="LongInput" type="text" placeholder="chiều dài" style="width: 150px; height: 30px; justify-content:center; border-radius: 5px;">
+        <input id="WidthInput" type="text" placeholder="chiều rộng" style="width: 150px; height: 30px; justify-content:center; border-radius: 5px;">
+        <button id="btnD" style="width: 40px; height: 20px; border-radius: 5px;"></button>
+        <p>Có diện tích la: <span id="total4"></span></p>
+        <p>Có chu vi là: <span id="total5"></span></p>
+    </div>
+
+    <div class="calculation" style="max-width: 1200px; height: auto; background-color: yellow; text-align:center; margin: 100px auto; padding: 10px;">
+        <h2>Bài 5: Tính tổng hai ký số</h2>
+        <input id="Number" type="text" placeholder="nhập một số có hai chữ số" style="width: 200px; height: 30px; justify-content:center; border-radius: 5px;">
+        <button id="btnA" style="width: 40px; height: 20px; border-radius: 5px;"></button>
+        <p>Tổng: <span id="total6"></span></p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
